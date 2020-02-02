@@ -7,3 +7,10 @@
     font-weight: 400;
     font-display: swap;
 }
+@font-face {
+    font-family: 'FiraSans-ExtraBold', sans-serif;
+    src: 
+        url('../fonts/FiraSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/FiraSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+}

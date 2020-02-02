@@ -105,18 +105,18 @@ button:not(:disabled) {
     border: none;
 }
 h1{
-    font-family: 'WildernessTypeface-Regular';
-    font-size: 200px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 36px;
     font-weight: 700;
 }
 h2{
-    font-family: 'Exo 2', sans-serif;
-    font-size: 72px;
+    
+    font-size: 32px;
     line-height: 72px;
     font-weight: 700;
 }
 h3{
-    font-size: 45px;
+    font-size: 25px;
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     text-transform: uppercase;
@@ -142,3 +142,15 @@ h5{
     flex: 0 0 auto; 
     font-family: 'Exo 2', sans-serif;
 }
+
+// icons animation start
+@keyframes rota {
+    25% { transform: rotate(360deg); }
+}
+.tel-popup{
+    animation: rota 5s infinite reverse;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -5px;
+}
+// icons animation end

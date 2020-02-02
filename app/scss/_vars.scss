@@ -1,1 +1,16 @@
 $bg: #dcc26e;
+$decor: #9F8047;
+$main: #1e1313;
+
+@keyframes rota {
+    25% { transform: rotate(360deg); }
+}
+
+
+%point{
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+}

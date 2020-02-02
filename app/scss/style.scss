@@ -4,6 +4,7 @@
 
 
 .header__top{
+    margin-bottom: 75px;
     .slick-slider{
         .slick-prev, .slick-next{
             display: none!important;
@@ -34,20 +35,215 @@
             width: 100%;
             max-width: none;
             font-weight: 400;
+            color: #1e1313;
         }
+    }
+    .social-list{
+        letter-spacing: 0.06em;
+        padding: 40px 0;
+        ul{
+            li{
+                position: relative;
+                display: inline-block;
+                margin-right: 25px;
+                a{
+                    text-transform: uppercase;
+                    &:before{
+                        display: inline-block;
+                        background: #9bb0dd;
+                        z-index: -1;
+                        content: "";
+                        position: absolute;
+                        bottom: 4px;
+                        left: 0;
+                        height: 0;
+                        width: 100%;
+                        transition: all .4s cubic-bezier(.77,0,.175,1);
+                    }
+                    &:hover:before{
+                        height: 8px;
+                        transition: all .4s cubic-bezier(.77,0,.175,1);
+                    }
+                }
+            }
+        }
+        &__bar > a{
+            &:nth-child(1){
+                &:before{
+                    background: #ccacc8;
+                }
+                &:hover:before{
+                    height: 8px;
+                    transition: all .4s cubic-bezier(.77,0,.175,1);
+                }
+            }
+        }
+    }
+}
+.header__main{
+    position: relative;
+    a{
+        font-family: 'Fira Sans', sans-serif;
+        color: #333;
+        .logo-title{
+            font-weight: 300;
+            line-height: 45px;
+            letter-spacing: 0.02em;
+            font-family: 'FiraSans-ExtraBold', sans-serif;
+            position: relative;
+            z-index: 2;
+            margin-bottom: -10px;
+            span{
+                position: absolute;
+                top: 60%;
+                left: 83%;
+                right: auto;
+                font-weight: 100;
+                font-size: 53px;
+                font-family: 'Fira Sans', sans-serif;
+                color: #bdbdbd;
+                font-style: normal;
+                z-index: -1;
+                letter-spacing: -0.08em;
+                &:before{
+                    position: absolute;
+                    @extend %point;
+                    background: $decor;
+                    top: 76%;
+                    left: initial;
+                    bottom: auto;
+                }
+            }
+        }
+        .logo-subtitle{
+            text-align: center;
+            color: $decor;
+            font-family: 'Exo 2';
+            letter-spacing: -0.01em;
+            font-size: 14.5px;
+        }
+    }
+    .aside-menu{
+        position: absolute;
+        padding: unset;
+        top: 0;
+        right: 0;
+        // &:before,
+        // &:after {
+        //     content: " ";
+        //     // display: table;
+        // }
+        ul{
+            padding: 10px 0;
+           
+        }
+        &__one,
+        &__two,
+        &__three{
+            border-bottom: 2px solid $decor;
+            top: 0;
+            right: 0;
+            width: 70%;
+            float: right;
+            // z-index: 1000;
+            padding-left: 0;
+            text-align: right;
+            li a{
+                cursor: pointer;
+                span{
+                color: #ccacc8;
+                margin-right: 30px;
+                line-height: 16px;
+                letter-spacing: 0.07em;
+                font-size: 18px;
+                // padding-left: 1em;
+                // padding-right: 2em;
+                font-family: 'Exo 2', sans-serif;
+                font-weight: 400;
+                transition: all .4s cubic-bezier(.77,0,.175,1);
+                &:hover{
+                    // color: #ccacc8;
+                    transform: scale(1.1);
+                    text-decoration: underline;
+                    line-height: 3px;
+                    text-decoration-color: #ccacc8;
+                    transition: all .4s cubic-bezier(.77,0,.175,1);
+                }
+                }
+                
+            } 
+            .long{
+                // padding-left: 4em;
+            }
+        }
+        &__one{
+            background-color: #4b4b4b;
+            li > a{
+                :hover{
+                    color: #f4f4f4;
+                }
+            }
+        }
+        &__two{
+            background-color: #cecece;
+            top: 3em;
+            width: 60%;
+            border-bottom: 2px solid $decor;
+            li a{
+                span{
+                    color: #1e1313;
+                    text-align: center;
+            // z-index: 2;
+            }
+        }
+    }
+        &__three{
+            background-color: #f4f4f4;
+            font-style: italic;
+            top: 6em;
+            width: 45%;
+            float: right;
+            border-bottom: 2px solid $decor;
+            // z-index: 1;
+            li a{
+                span{
+                    color: #1e1313; 
+                }
+            }
+        }
+    }
+    .nav-menu{
+        // position: relative;
+        display: inline-block;
+        right: 0;
     }
 }
 
 
-@keyframes rota {
-    25% { transform: rotate(360deg); }
-}
-.tel-popup{
-    animation: rota 5s infinite reverse;
-    animation-iteration-count: infinite;
-    position: absolute;
-    top: -5px;
-}
 
+// start footer
+.footer{
+    padding: 30px 0;
+    z-index: -1;
+    &__credits > a{
+        font-size: 12px;
+        color: #333;
+        span{
+            color: #9F8047;
+            text-decoration: underline;
+        }
+    }
+    .social-icon{
+        width: 35px;
+        height: 35px;
+    }
+    &__socials a img{
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+// end footer
 
 @import 'media';
