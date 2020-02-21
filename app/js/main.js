@@ -68,5 +68,44 @@ $("nav li a").click(function () {
     $("body,html").animate({scrollTop: destination }, 1000);
 });
 
+//Accordion
 
+var accordions =
+document.getElementsByClassName('accordion');
+
+for (var i = 0; i < accordions.length; i++) {
+    accordions[i].onclick = function () {
+    this.classList.toggle('is-open');
+    var content = this.nextElementSibling;
+
+    if (content.style.maxHeight) {
+        //acordion is open, we need to close it
+        content.style.maxHeight = null;
+    } else {
+        //accordion is closed
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+    }
+}
+// CURSOR
+let mouseCursor = document.querySelector(".cursor");
+let navLinks = document.querySelectorAll(".main");
+
+window.addEventListener('mousemove',cursor);
+
+function cursor (e) {
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px";
+}
+
+navLinks.forEach(link => {
+    link.addEventListener("mouseleave", () => {
+        mouseCursor.classList.remove("link-grow");
+        link.classList.remove("hovered-link");
+    });
+    link.addEventListener("mouseover", () => {
+        mouseCursor.classList.add("link-grow");
+        link.classList.add("hovered-link");
+    });
+    });
 });
