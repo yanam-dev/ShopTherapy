@@ -93,6 +93,9 @@ legend {
     color: inherit;
     white-space: normal;
 }
+::selection {
+    background: #ccacc8;
+}
 input,
 select,
 textarea{

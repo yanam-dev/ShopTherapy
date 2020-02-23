@@ -139,28 +139,23 @@
         ul{
             padding: 10px 0;
         }
-        .nav-menu__one,
-        .nav-menu__two,
-        .nav-menu__three{
+        .nav-menu{
             border-bottom: 2px solid $decor;
             top: 0;
             right: 0;
             width: 60%;
+            height: 47px;
             float: right;
-            // z-index: 1000;
-            // padding-left: 0;
             text-align: right;
             li a{
                 cursor: pointer;
                 span{
                 // color: rgba(251, 92, 206, 0.47);
-               color: #f4f4f4;
+                color: #f4f4f4;
                 margin-right: 30px;
                 line-height: 16px;
                 letter-spacing: 0.07em;
                 font-size: 18px;
-                // padding-left: 1em;
-                // padding-right: 2em;
                 font-family: 'Exo 2', sans-serif;
                 font-weight: 400;
                 transition: all .4s cubic-bezier(.77,0,.175,1);
@@ -177,33 +172,15 @@
         }
         .nav-menu__two{
             background-color: #ced5e0;
-            // top: 3em;
-            width: 50%;
+            width: 80%;
             border-bottom: 2px solid $decor;
-            margin-top: 0px;
-            transform: translateX(0px)!important;
-            // transform: translateX(0)!important;
-        //     animation-duration: 3s;
-        // animation-fill-mode: both;
-        // animation-delay: 1s;
-        // animation-name: navLinkFade;
-        // visibility: visible;
+            margin-top: 13px;
         }
         .nav-menu__three{
             background-color: #f3f5f9;
             font-style: italic;
-            // top: 6em;
-            width: 40%;
+            width: 60%;
             border-bottom: 2px solid $decor;
-            margin-top: 46px;
-            transform: translateX(331px)!important;
-            // animation-duration: 3s;
-            // animation-fill-mode: both;
-            // animation-delay: 4s;
-            // animation-name: navLinkFade;
-            // visibility: visible;
-            // opacity: 1;
-            // z-index: 0;
             li a{
                 span{
                     color: #1e1313; 
@@ -371,6 +348,29 @@ button {
 
 // start footer
 .footer{
+    .info-list{
+        display: block;
+        width: 300px;
+    }
+    .info-title{
+        font-size: 16px;
+        font-family: 'Exo 2', sans-serif;
+        text-transform: lowercase;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+    .info-list{
+        letter-spacing: 0.025em;
+        font-weight: 300;
+        .info-item{
+            margin-bottom: 15px;
+        }
+        li+li{
+            margin-bottom: 15px;
+        }
+    }
+}
+.footer{
     z-index: 0;
     &__box{
         width: 100%;
@@ -418,6 +418,7 @@ button {
             text-transform: uppercase;
             max-width: 50%;
             font-weight: 300;
+            color: #9F8047;
             span{
                 display: block;
                 font-size: 20px;
@@ -425,6 +426,7 @@ button {
                 letter-spacing: 0;
                 text-transform: lowercase;
                 margin-top: 20px;
+                color: #333333;
             }
         }
         a{
@@ -572,9 +574,8 @@ button {
 // end list section
 // start conditions section
 .conditions{
-    margin-bottom: 20px;
     &__inner{
-        background-color: #ececec;
+        background-color: #FDF8F5;
         padding: 50px 0 60px;
     }
     &__items{
@@ -686,7 +687,6 @@ button.accordion {
         border-radius: 50%;
         width: 16px;
         height: 16px;
-        // transform: translate(-50%, 50%);
         margin: 0 auto;
     }
 }

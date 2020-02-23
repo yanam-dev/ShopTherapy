@@ -40,14 +40,23 @@ $(function(){
         const navSLide = () => {
             const menu__btn = document.querySelector('.menu__btn');
             const nav = document.querySelector('.nav-menu');
-            const navLinks = document.querySelectorAll('.nav-menu > li');
-            
+            const navLinks = document.querySelectorAll('.nav-menu li');
+            const navList = document.querySelectorAll('.nav-menu__one, .nav-menu__two, .nav-menu__three');
+        
             menu__btn.addEventListener('click', () => {
                 // Toggle Nav
                 nav.classList.toggle('menu-active')
         
                 // Animate Links
                 navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+                 // Animate List
+                 navList.forEach((link, index) => {
                     if (link.style.animation) {
                         link.style.animation = '';
                     } else {
@@ -108,4 +117,26 @@ navLinks.forEach(link => {
         link.classList.add("hovered-link");
     });
     });
+
+  
+    // (function ($) {
+    //     var token = "3561792490.1677ed0.8167784b79634ea08757ecc269d6056c";  
+    //     var num_photos = 4;
+    //      $.ajax({
+    //          url: "https://api.instagram.com/v1/users/self/media/recent",
+    //          dataType: "jsonp",
+    //          type: 'GET',
+    //          data: {access_token: token, count: num_photos},
+    //          success: function(data){
+    //              console.log(data ,"insta");
+    //              for( x in data.data ){
+    //              $('.instagallery').append('<div class="o-flex__item o-flex__col-lg-3 o-flex__col-sm-6" style="padding:0;"><a rel="gallery1" target="_blank" href="'+data.data[x].link+'" title=""> <img class="c-insta-img" src="'+data.data[x].images.low_resolution.url+'"></a></div>');  
+    //              }
+    //          },
+    //          error: function(data){
+    //              console.log(data);
+    //          }
+    //      });
+    //  })(jQuery);  
+    
 });
