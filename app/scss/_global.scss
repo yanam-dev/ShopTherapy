@@ -222,6 +222,8 @@ h5{
     text-align: left;
     text-transform: lowercase;
     position: relative;
+    margin-bottom: -70px;
+    font-size: 20px;
     .list{
         position: relative;
         display: inline-block;
@@ -233,7 +235,7 @@ h5{
     }
     &:before {
         position: absolute;
-        top: 7%;
+        top: 8%;
         left: 0;
         right: 0;
         height: 1px;

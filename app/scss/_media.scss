@@ -20,6 +20,14 @@
         }
     }
 }
+@media screen and (min-width: 1600px){
+    .store-pics__brands {
+        width: 1840px;
+    }
+    .store-pics .store-grid {
+        max-width: 1840px;
+    }
+}
 // end store-list section
 @media screen and (max-width: 1400px){
     .nav-menu{
@@ -67,11 +75,14 @@
         padding-left: 65px;
     }
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 800px){
     .header__main-xs{
         .logo-title{
             display: none;
         }
+    }
+    .header__top {
+        margin-bottom: 35px;
     }
 }
 
