@@ -316,21 +316,23 @@ button {
 }
 .big-list{
     display: inline-block;
-    margin: 1em 0 2em;
-    max-width: 49%;
-    span > a{
-        color: #a53385;
-        letter-spacing: 0.05em;
-        font-size: 15px;
-        transition: all 1s ease;
-        &:hover{
-            text-decoration: underline;
-        }
+    margin: 0 3em 1em;
+    max-width: 100%;
+    span{
+        a{
+            color: #a53385;
+            letter-spacing: 0.05em;
+            font-size: 15px;
+            transition: all 1s ease;
+            &:hover{
+                text-decoration: underline;
+            }
+        } 
     }
     li{
         width: 200px;
-        height: 2em;
-        float: left;
+        height: 2.5em;
+        // float: left;
         min-width: 100px;
         a{
             text-decoration: underline;
@@ -353,6 +355,7 @@ button {
 
 // start footer
 .footer{
+    background-color: #f4f4f6;
     .info-list{
         display: block;
         width: 300px;
@@ -362,21 +365,20 @@ button {
         font-family: 'Exo 2', sans-serif;
         text-transform: lowercase;
         font-weight: 300;
-        letter-spacing: 0.05em;
+        letter-spacing: 2.4px;
     }
     .info-list{
-        letter-spacing: 0.025em;
+        letter-spacing: 2.4px;
         font-weight: 300;
         .schedule{
             border: 0.5px dotted #333;
             padding: 5px 10px 5px 15px;
-            letter-spacing: 0.1em;
         }
         .info-item{
             margin-bottom: 15px;
             line-height: 28px;
             a{
-                letter-spacing: 0.025em;
+                letter-spacing: 2.4px;
                 font-size: 16px;
                 color: #333;
                 &:hover{
@@ -394,6 +396,7 @@ button {
     padding-top: 60px;
     z-index: 0;
     border-top: 0.5px solid #9F8047;
+    letter-spacing: 2.4px;
     &__content{
         .footer__info{
             padding-bottom: 50px;
@@ -464,6 +467,7 @@ button {
         display: block;
         text-align: start;
         padding-left: 15px;
+        background-color: #fff;
         a{
             font-size: 12px;
             color: #333;
@@ -500,12 +504,12 @@ button {
     }
 }
 .store-pics{
-    margin: 80px 0 100px;
+    margin-top: 80px;
     display: inline-block;
     &__brands{
         margin: 0 3em;
-        // width: 100%;
-        // max-width: 1840px;
+        max-width: 100%;
+        width: 1840px;
         .brands__letter-index{
             top: 0;
             background: #fff;
@@ -530,7 +534,7 @@ button {
                 scroll-behavior: smooth;
                 line-height: 24px;
                 justify-content: space-around;
-                li > a{
+                button{
                     font-size: 16px;
                     &:hover{
                         font-weight: 700;
@@ -703,13 +707,35 @@ button {
     &__content{
         &-title{
             font-style: italic;
+            em{
+                font-style: normal;
+            }
         }
         &-txt{
         line-height: 24px;
             p{
                 letter-spacing: 0.025em;
                 font-weight: 300;
+                font-size: 16px;
                 margin-bottom: 25px;
+                padding-left: 25px;
+                position: relative;
+                &:before{
+                    content: url(../images/icons/ellypsis.svg);
+                    position: absolute;
+                    top: -14px;
+                    left: -14px;
+                }
+                a{
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-decoration: underline;
+                    letter-spacing: 3px;
+                    &:hover{
+                        color: rgba(108,99,255,0.8);
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
@@ -878,7 +904,68 @@ button.accordion.is-open:after {
 }
 // end contacts
 // end ORDER PAGE
-
+// start team page
+.header-team{
+    margin-bottom: 150px;
+}
+.about{
+    margin-bottom: 150px;
+}
+.team{
+    &__list{
+        justify-content: space-between;
+        a{ 
+            width: 350px;
+            height: 350px; 
+            position: relative;
+            &:nth-child(3){
+                &:after{
+                    position: absolute;
+                    content: "+";
+                    top: 45%;
+                    left: 45%;
+                    color: #ff5800;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 54px;
+                    font-weight: 300;
+                }
+            }
+            .photo{
+                // border-radius: 50%;
+                height: 100%;
+                width: 100%;
+                background-color: #333;
+            }
+        }
+    }
+}
+.insta{
+    
+    &-title{
+        position: relative;
+    }
+       
+    .list{
+        padding: 0 30px;
+        font-weight: 300;
+        background: #fff;
+        z-index: 1;
+        margin-left: -30px;
+        position: relative;
+        &:after {
+            position: absolute;
+            top: 7%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            content: '';
+            background: #cacacc;
+        }
+    }
+    
+}
+// end team page
 
 @import 'media';
 

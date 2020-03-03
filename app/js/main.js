@@ -138,5 +138,6 @@ navLinks.forEach(link => {
     //          }
     //      });
     //  })(jQuery);  
-    
+    // MIXING STORES
+    var mixer = mixitup('.store-grid');
 });
