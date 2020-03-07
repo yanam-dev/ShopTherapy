@@ -140,4 +140,15 @@ navLinks.forEach(link => {
     //  })(jQuery);  
     // MIXING STORES
     var mixer = mixitup('.store-grid');
+    
+  // $(".store-brick").slice(0, 25).show();
+        // $("#loadMore").on("click", function(e){
+        //   e.preventDefault();
+        //   $(".store-brick:hidden").slice(0, 25).slideDown();
+        //   if($(".store-brick:hidden").length == 0) {
+        //     $("#loadMore").text("No Content").addClass("noContent");
+        //   }
+        // });
+        
+     
 });

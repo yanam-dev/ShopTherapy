@@ -58,6 +58,8 @@ a, label{
 }
 img {
     display: block;
+    border-style: none;
+    max-width: 100%;
 }
 svg {
     overflow: hidden;
@@ -222,8 +224,9 @@ h5{
     text-align: left;
     text-transform: lowercase;
     position: relative;
-    margin-bottom: -70px;
+    margin-bottom: 75px;
     font-size: 20px;
+    height: 40px;
     .list{
         position: relative;
         display: inline-block;
@@ -235,7 +238,7 @@ h5{
     }
     &:before {
         position: absolute;
-        top: 8%;
+        top: 34%;
         left: 0;
         right: 0;
         height: 1px;
@@ -254,3 +257,10 @@ h5{
     }
 }
 // breadcrumbs end
+
+// load-more button start
+
+#more{
+    display: none;
+}
+  // load-more button end
