@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua,en">
+<html lang="ua-en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="icon" href="images/icons/frame1.png" type="image/png" sizes="72x65">
     <title>ShopTherapy - покупки за кордоном</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:200i,300,400,500,600,700,800,900|PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200i,300,400,500,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -67,13 +67,14 @@
                     </div>
                 </div>
                 <div class="header__main">
-                    <div class="header__main-logo header__main-xs">
+                    <div class="header__main-logo">
                         <div class="container">
-                            <a href="index.html" target="_blank">
+                            <a href="index.html" target="_self">
                                 <h1 class="logo-title">
-                                    ShopT
+                                    ShopTherapy
                                     <span>911</span>
                                 </h1>
+                                <span class="logo-subtitle">Розумний шопінг</span>
                             </a>
                         </div>
                     </div>
@@ -81,9 +82,9 @@
                         <ul class="nav-menu nav-menu__one">
                             <li class="nav-item">
                                 <a href="index.html" target="_self">
-                                    <span class="logo-small">
+                                    <!-- <span class="logo-small">
                                         ShopT.
-                                    </span>
+                                    </span> -->
                                     <span class="logo-big">
                                         ShopTherapy
                                     </span>
@@ -96,7 +97,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <ul class="nav-menu nav-menu__two">
+                            <div class="nav-menu nav-menu__two">
                                 <li class="nav-item">
                                     <a href="stores.html" target="_self">
                                         <span>Магазини</span>
@@ -107,14 +108,14 @@
                                         <span>Послуги</span> 
                                     </a>
                                 </li>
-                            </ul>
-                            <ul class="nav-menu nav-menu__three">
+                            </div>
+                            <div class="nav-menu nav-menu__three">
                                 <li class="nav-item">
                                     <a href="order.html" target="_self">
                                         <span>Як замовити?</span>
                                     </a>
                                 </li>
-                            </ul>
+                            </div>
                         </ul>
                     </nav>
                     <!-- <div class="header__main-idea">
@@ -135,17 +136,31 @@
                         </h4>
                         <div class="order__content-txt">
                             <p>Написати нам у ¬ <br>
-                                <a href="https://invite.viber.com/?g2=AQBfGfsT8kVRw0lBhy9OhJdSxHc54qCVJXtSupxKeM18EH6p3BjSeMJGbnxLfJ8W&lang=it">Viber</a> <br>
-                                <a href="#">Інстаграм</a> <br>
-                                <a href="#">Messenger</a> <br>
-                                або на email: <a href="mailto:shoptherapy.911@gmail.com">shoptherapy.911@gmail.com</a>
+                                <a href="https://invite.viber.com/?g2=AQBfGfsT8kVRw0lBhy9OhJdSxHc54qCVJXtSupxKeM18EH6p3BjSeMJGbnxLfJ8W&lang=it" target="_blank">Viber</a> <br>
+                                <a href="#" target="_blank">Інстаграм</a> <br>
+                                <a href="#" target="_blank">Messenger</a> <br>
+                                або на email: <a href="mailto:shoptherapy.911@gmail.com" target="_blank">shoptherapy.911@gmail.com</a>
                             </p>
-                            <p>Надіслати посилання на товар або додати фотографію, вказавши колір та розмір</p>
-                            <p>Після отриманої інформації ми надсилаємо вам розрахунок вартості товару і вказуємо орієнтовний термін доставки в Україну</p>
-                            <p>Якщо вас все влаштовує, потрібно внести передоплату у розмірі 50%. Після цього ми викупляємо ваше замовлення</p>
-                            <p>Отримавши ваше замовлення в Україні, ми надсилаємо вам рахунок за доставку, а також решту суми до оплати, якщо попередньо було сплачено 50% за замовлення</p>
-                            <p>Замовлення відправляємо по Україні Новою поштою або Укрпоштою за рахунок покупця. Також можливий самозабір у Луцьку</p>
-                            <p>Відправляємо замовлення після повної оплати товару</p>
+                            <p>Надіслати посилання на товар або додати фотографію, вказавши колір та розмір.</p>
+                            <p>Після отриманої інформації ми надсилаємо вам розрахунок вартості товару і вказуємо орієнтовний термін доставки в Україну.</p>
+                            <p>Якщо вас все влаштовує, потрібно внести передоплату у розмірі 50%. Після цього ми викупляємо ваше замовлення.</p>
+                            <p>Отримавши ваше замовлення в Україні, ми надсилаємо вам рахунок за доставку, а також решту суми до оплати, якщо попередньо було сплачено 50% за замовлення.</p>
+                            <p>Замовлення відправляємо по Україні Новою поштою або Укрпоштою за рахунок покупця. Також можливий самозабір у Луцьку.</p>
+                            <p>Відправляємо замовлення після повної оплати товару.</p>
+                        </div>
+                    </div>
+                    <div class="order__content order__content-terms">
+                        <h5 class="order__content-title">
+                            Терміни доставки в Україну:
+                        </h5>
+                        <div class="order__content-txt">
+                            <p>США - <b> від 14 до 21 дня</b> </p>
+                            <p>Італія - <b>10-14 роб. днів</b> </p>
+                            <p>Іспанія - <b>10-14 роб. днів</b></p>
+                            <p>Німеччина - <b>10-14 роб. днів</b></p>
+                            <p>Польща - <b>10-12 роб. днів</b></p>
+                            <p>Англія - <b>від 18 до 21 дня</b></p>
+                            <em> {Вказані орієнтовні терміни доставки. Час доставки залежить від країни викупу і від того, наскільки швидко магазин відправить товар. Терміни доставки можуть бути довшими, якщо посилка затримана митницею на перевірку.}</em>
                         </div>
                     </div>
                 </div>
@@ -168,21 +183,21 @@
                         <button class="accordion fadeInUp" animation-duration="1.5s" animation-delay="0.4s">Якщо ви отримали не те, що замовляли?</button>
                         <div class="accordion-content">
                             <p class="accordion-txt">
-                                У випадку, якщо Ви отримали річ не того кольору/розміру, або замовлений товар не відповідає опису на сайті, ми повертаємо вам кошти.
+                                У випадку, якщо Ви отримали річ не того кольору/розміру, або замовлений товар не відповідає опису на сайті, ми повернемо вам кошти.
                             </p>
                             <!-- <a class="accordion-link" href="#">See more</a> -->
                         </div>
                         <button class="accordion wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">Якщо річ не підійшла за розміром?</button>
                         <div class="accordion-content">
                             <p class="accordion-txt">
-                                Речі, що не підійшли за розміром, не завжди вигідно повертати. В більшості випадків краще продати річ в Україні, оскільки більшість товарів куплені по хороших знижках, а тому в Україні коштуватимуть дорожче. Ми вам можемо надати перелік сайтів для продажу, а також розмістити річ у наших групах у соцмережах</p>
+                                Речі, що не підійшли за розміром, не завжди вигідно повертати. В більшості випадків краще продати річ в Україні, оскільки більшість товарів куплені по хороших знижках, а тому в Україні коштуватимуть дорожче. Ми вам можемо надати перелік сайтів для продажу, а також розмістити річ у наших групах у соцмережах.</p>
                             <!-- <a class="accordion-link" href="#">See more</a> -->
                         </div>
 
                         <button class="accordion wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">Якщо ви виявили брак на замовленому товарі, то ...</button>
                         <div class="accordion-content">
                         <p class="accordion-txt">
-                            Якщо на замовленому товарі виявлено виробничий брак, ви маєте якнайшвидше повідомити про це нас (протягом трьох днів, після отримання товару в Україні). В даному випадку можлива компенсація на ремонт або повернення, залежно від ситуації. Але товар повинен бути з етикетками та у фірмовій упаковці.
+                            Якщо на замовленому товарі виявлено виробничий брак, ви повинні повідомити нас про це якнайшвидше (протягом трьох днів, відколи отримали товар в Україні). У такому разі можлива компенсація на ремонт або повернення, залежно від ситуації. Важливо, щоб товар залишився із етикетками та у фірмовій упаковці.
                             </p>
                             <!-- <a class="accordion-link" href="#">See more</a> -->
                         </div>
@@ -196,8 +211,22 @@
                         <button class="accordion wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2s">Чому не всі замовлення приходять у фірмових пакетах/упаковці?</button>
                         <div class="accordion-content">
                             <p class="accordion-txt">
-                                Не всі магазини надсилають свої замовлення у фірмових пакетах чи подарункових упаковках. У більшості магазинів ця послуга платна - від 3 до 5 у.о.  <br> У деяких магазинах ця послуга безкоштовна, але при замовленні додаткової упаковки зростає вартість доставки, тому перед замовленням потрібно повідомляти, що вам потрібно отримати товар у подарунковій упаковці.
+                                Не всі магазини надсилають свої замовлення у фірмових пакетах чи подарункових упаковках. У більшості магазинів ця послуга платна - від 3 до 5 у.о.  <br> У деяких магазинах ця послуга безкоштовна, проте при замовленні додаткової упаковки зростає вартість доставки. <br> Важливо, щоб Ви заздалегідь повідомили нас про своє бажання отримати товар у подарунковій упаковці.
                             </p>
+                            <!-- <a class="accordion-link" href="#">See more</a> -->
+                        </div>
+                        <button class="accordion wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2s">В який період бувають найбільші розпродажі?</button>
+                        <div class="accordion-content">
+                            <p class="accordion-txt">
+                                Зазвичай найбільші знижки бувають в США в такі дні:
+                                Остання п'ятниця листопада, відразу після Дня Подяки - «Чорна п'ятниця». Натомість в онлайн-магазинах знижки починаються орієнтовно за тиждень до Чорної п'ятниці. <br>
+                                <b>Cyber Monday</b> - понеділок після Чорної п'ятниці. Цей день відведений для найбільших знижок саме в онлайн-магазинах. <br>
+                                <b>Різдво</b> - період Різдвяних знижок починається за місяць до свята, відразу після Чорної п'ятниці. Це найбільш масштабні розпродажі в американських магазинах. <br>
+                                <b>День Святого Валентина</b> - 14 лютого. <br>
+                                <b>Великдень</b>. <br>
+                                <b>День Матері</b> - 2-а неділю травня. <br>
+                                <b>День Незалежності</b> - 4 липня.
+                                </p>
                             <!-- <a class="accordion-link" href="#">See more</a> -->
                         </div>
                     </div>

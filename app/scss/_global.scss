@@ -9,8 +9,7 @@ body{
 }
 body{
 	font-family: 'Exo 2', sans-serif;
-    // font-family: 'PT Sans', sans-serif;
-	position: relative;
+	// position: relative;
 	min-width: 320px;
     overflow-x: hidden; 
     // overflow-y: hidden;
@@ -141,10 +140,16 @@ h4{
     font-weight: 300;
 }
 h5{
+    font-size: 24px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+}
+h6{
     font-size: 20px;
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
 }
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -156,6 +161,7 @@ h5{
 .footer{
     flex: 0 0 auto; 
     font-family: 'Exo 2', sans-serif;
+    position: relative; 
 }
 
 .cursor{
@@ -257,16 +263,15 @@ h5{
     }
 }
 // breadcrumbs end
-
-// viber-btn start
-.btnScroll {
+// VIBER-btn start
+.viber__btn {
     position: absolute;
     right: 60px;
+    bottom: 67px;
     left: auto;
-    button{
+    a > button{
     z-index: 1;
     background: rgba(108,99,255,0.7);
-    // background-color: #8074d6;
     color: #f4f4f6;
     letter-spacing: 1.1px;
     text-transform: uppercase;
@@ -274,7 +279,6 @@ h5{
     width: 60px;
     height: 60px;
     text-align: center;
-    bottom: 100px;
     border: 0;
     outline: 0;
     border-radius: 60px;
@@ -305,6 +309,5 @@ h5{
             box-shadow: 0 2px 8px rgba(0,0,0,.09) , 0 4px 40px rgba(0,0,0,.24);
         }
     }
-}
-    
-    // viber-btn end
+} 
+// viber-btn end

@@ -175,10 +175,12 @@
             width: 80%;
             border-bottom: 2px solid $decor;
             margin-top: 13px;
+            padding-top: 12px;
         }
         .nav-menu__three{
             background-color: #f3f5f9;
             font-style: italic;
+            padding-top: 12px;
             width: 60%;
             border-bottom: 2px solid $decor;
             li a{
@@ -331,7 +333,7 @@ button {
             @extend %underline-anim;
             &:before{
                 background-color:  rgba(165, 51, 133, 0.822);
-                height: 0.5px;
+                height: 1px;
                 width: 0;
             }
             &:hover:before{
@@ -432,11 +434,10 @@ button {
     padding-top: 60px;
     z-index: 0;
      border-top: 0.5px solid rgba(158, 127, 71, 0.6);
-    // letter-spacing: 2.4px;
     &__content{
         align-items: flex-end;
         padding-bottom: 60px;
-       
+        justify-content: space-evenly;
     }
     &__box{
         width: 100%;
@@ -530,16 +531,6 @@ button {
 
 // STORES PAGE
 // start store-list section
-.header__main-xs{
-    a{
-        .logo-title{
-            span{
-                top: 45%;
-                left: 95%;
-            }
-        }
-    }
-}
 .store-pics{
     margin-top: 80px;
     display: inline-block;
@@ -737,6 +728,12 @@ button {
         }
     }
 }
+.footer-stores{
+    .footer__content{
+        padding-bottom: 0;
+    }
+}
+
 // end store-list section
 // start ORDER PAGE
 // order section
@@ -747,6 +744,20 @@ button {
             font-style: italic;
             em{
                 font-style: normal;
+            }
+        }
+        &-terms{
+            h5{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                &:before{
+                    display: none;
+                }
+            }
+            span{
+                text-align: left;
             }
         }
         &-txt{
@@ -813,6 +824,7 @@ button.accordion {
     } 
     &:after{
         content: url(../images/icons/plus.svg);
+        margin-left: 10px;
         float: right;
         background: $rose;
         border-radius: 50%;
@@ -834,6 +846,7 @@ button.accordion.is-open:after {
     .accordion-txt{
         font-weight: 300;
         letter-spacing: 0.025em;
+        line-height: 24px;
     }
 }
 // end faq section
@@ -1046,7 +1059,7 @@ button.accordion.is-open:after {
             @extend %underline-anim;
             &:before{
                 background-color:  rgb(70, 70, 70);
-                height: 0.5px;
+                height: 1px;
             }
         }
     }
