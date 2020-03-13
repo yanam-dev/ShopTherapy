@@ -1,11 +1,10 @@
 
 @media screen and (max-width: 1800px){
-    h1{
-        padding-left: 115px;
-    }
-    .logo-subtitle{
-        padding-left: 115px;
-    }
+//    .header__main-idea{
+//        .main-idea__txt{
+//            padding-left: 115px;
+//        }
+//    }
 }
 @media screen and (max-width: 1600px){
     .conditions{
@@ -102,13 +101,16 @@
         margin-bottom: 100px;
     }
     .about{
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         .breadcrumbs{
             margin-bottom: 30px;
         }
     }
     .insta {
         margin-bottom: 80px;
+        .breadcrumbs{
+            margin-bottom: 45px;
+        }
     }
     // ORDER page
     .order, .faq{
@@ -132,12 +134,19 @@
         display: none;
     }
 }
-@media screen and (max-width: 1120px){
-    h1{
-        padding-left: 65px;
+@media screen and (max-width: 1200px){
+    .contacts .flex-block__item{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        .customer-care{
+            margin-bottom: 25px;
+        }
     }
-    .logo-subtitle{
-        padding-left: 65px;
+    .contacts {
+        padding: 60px 0 20px;
+        &__inner {
+            padding-top: 85px;
+        }
     }
 }
 @media screen and (max-width: 1025px){
@@ -150,8 +159,29 @@
     .flex-block__img-xs{
         display: block!important;
     }
+    .store-pics {
+        margin-top: 10px;
+    }
+    .store-pics__brands .brands__letter-index .index-list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .team__item .team__photo-last:after {
+        top: 40%;
+        left: 38%;
+        width: 16px;
+        height: 16px;
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 960px){
+    .header__top-inner{
+        display: list-item;
+        .promo-slider{
+            margin-top: 10px;
+        }
+    }
     .footer .info-icon {
         margin-left: 25px;
         margin-top: 25px;
@@ -175,6 +205,24 @@
             }
         }
     }
+    .insta__pics {
+        margin: 0;
+    }
+    .insta__pics-content{
+        a, span{
+            line-height: 14px;
+            font-size: 12px;
+        }
+    }
+    .store-list {
+        padding-bottom: 40px;
+    }
+    .faq {
+        padding-top: 0em;
+    }
+    .footer__box .faq-accordion {
+        max-width: 40%;
+    }
 }
 @media screen and (max-width: 840px){
     .footer__content {
@@ -189,6 +237,9 @@
 @media screen and (max-width: 768px){
     h1, .logo-subtitle {
         padding-left: 0;
+    }
+    .header{
+        margin-bottom: 50px;
     }
     .header__top .social-list {
         padding: 24px 0;
@@ -213,11 +264,48 @@
             margin-right: 25px;
         }
     }
+    .header__main-idea .main-idea__txt {
+        letter-spacing: 0.01em;
+        font-size: 20px;
+        padding-left: 70px;
+    }
     .conditions__items .flex-block__item span{
         font-size: 14px;
     }
     .viber__btn{
         right: 40px;
+    }
+    .insta .customer-care span {
+        font-size: 16px;
+    }
+    .insta .customer-care a {
+        font-size: 17px;
+    }
+    .insta__pics-content{
+        a, span {
+            line-height: 14px;
+            letter-spacing: 0.001em;
+        }
+    } 
+    
+}
+@media screen and (max-width: 720px){
+    .team__wrapper{
+        flex-flow: inherit;
+    }
+    .team__item {
+        margin: 0 -20px 200px;
+        width: 60%;
+        &__last{
+            place-content: flex-end;
+            flex-direction: none;
+        }
+    }
+    .list {
+        margin-bottom: 60px;
+    }
+    .footer__box .faq-accordion {
+        max-width: 35%;
     }
 }
 @media screen and (max-width: 688px){
@@ -242,6 +330,13 @@
             }
         }
     } 
+    .header__main-idea .main-idea__txt {
+        font-size: 19px;
+        padding-left: 61px;
+    }
+    .team__item h4 {
+        font-size: 24px;
+    }
     .footer__content .info-icons {
         line-height: 27px;
         width: 125px;
@@ -266,6 +361,20 @@
             margin-bottom: 50px;
         }
     }
+    .footer__box {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        .txt-block{
+            max-width: 100%;
+            margin: 1.5em 1em;
+        }
+        .faq-accordion {
+            max-width: 50%;
+            margin-bottom: 2em;
+        }
+    }
 }
 @media screen and (max-width: 620px){
     .header__main{
@@ -276,6 +385,18 @@
             }
         }
     } 
+    .team__item .team__photo-last {
+        width: 28%;
+    }
+    .team__item .team__photo-last:after {
+        font-size: 45px;
+    }
+    .insta__pics{
+        flex-wrap: wrap;
+        &-inner{
+            width: 45%;
+        }
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -310,8 +431,29 @@
             }
         }
     } 
+    .team__item {
+        margin: 0 -34px 200px;
+        width: 66%;
+    }
+    .team__item .team__photo-last:after {
+        font-size: 40px;
+    }
+    .insta {
+        margin-bottom: 60px;
+        .customer-care{
+            justify-content: flex-end;
+            span{
+                display: none;
+            }
+        }
+    }
 }
 @media screen and (max-width: 530px){
+    .insta__pics{
+        &-inner{
+            width: 44%;
+        }
+    }
     .store-list .store-list__big{
         .big-list{
             span{
@@ -319,6 +461,15 @@
             }
         }
     }
+    .footer__box {
+        .txt-block{
+            max-width: 100%;
+        }
+        .faq-accordion {
+            max-width: 70%;
+        }
+    }
+   
 }
 @media screen and (max-width: 490px){
     h1{
@@ -341,6 +492,19 @@
             }
         }
     } 
+    .store-pics {
+        margin-top: 0px;
+        &__brands{
+            margin: 0 2em;
+        }
+    }
+    .team__item {
+        margin: 0 -30px 200px;
+        width: 69%;
+    }
+    .team__item .team__photo-last:after {
+        font-size: 38px;
+    }
 }
 @media screen and (max-width: 460px){
     h1{
@@ -360,6 +524,21 @@
             }
         }
     } 
+    .team__item .team__photo-last {
+        width: 30%;
+    }
+    .order{
+        padding: 0 0 1em 0;
+        h4{
+            font-size: 24px;
+        }
+    }
+    .order__content-terms h5{
+        font-size: 21px;
+    }
+    .contacts .contact__form-title {
+        font-size: 25px;
+    }
     .footer__content {
         flex-direction: column;
         padding-bottom: 60px;
@@ -393,8 +572,11 @@
     .menu__btn{
         display: none;
     }
+    .header {
+        margin-bottom: 40px;
+    }
     .header__main{
-        padding-top: 100px;
+        padding-top: 120px;
         .aside-menu {
             .nav-menu li a span{
                 margin-right: 17px;
@@ -403,7 +585,40 @@
                 width: 77%;
             }
         }
+        &-logo {
+            margin-bottom: 60px;
+        }
     } 
+    .team__item h4 {
+        font-size: 22px;
+    }
+    .team__item span{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .team__item .team__photo-last:after {
+        font-size: 34px;
+        left: 36%;
+        top: 42%;
+    }
+    .insta__pics{
+        &-inner{
+            width: 43%;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .footer__box {
+        .faq-accordion {
+            max-width: 80%;
+        }
+    }
+    .header__main-idea .main-idea__txt {
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        font-size: 17px;
+        padding-left: 0;
+    }
 }
 @media screen and (max-width: 376px){
     .header__main{
@@ -413,8 +628,36 @@
             }
         }
     } 
+    .team__item .team__photo-last:after {
+        font-size: 32px;
+        left: 36%;
+    }
+    .order{
+        h4{
+            font-size: 21px;
+        }
+    }
+    .insta__pics{
+        &-inner{
+            width: 42%;
+        }
+    }
 }
 @media screen and (max-width: 360px){
+    
+    .team__item .team__photo-last:after {
+        font-size: 32px;
+        left: 34%;
+    }
+    .footer__box {
+        .txt-block{
+            font-size: 28px;
+        }
+        .txt-block span {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
     .footer__content {
         padding-bottom: 50px;
         .info-icons {

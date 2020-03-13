@@ -192,9 +192,12 @@
     }
     &-idea{
         .main-idea__txt{
-            font-size: 18px;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+            font-size: 21px;
             font-weight: 300;
             font-family: 'Exo 2', sans-serif;
+             padding-left: 115px;
         }
     }
 }
@@ -1095,7 +1098,6 @@ button.accordion.is-open:after {
     }
     a{
         font-weight: 300;
-        line-height: 2.4px;
         &:hover{
             color: #9F8047;
             text-decoration: underline;
