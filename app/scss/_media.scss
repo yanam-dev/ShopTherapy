@@ -1,10 +1,15 @@
 
-@media screen and (max-width: 1800px){
-//    .header__main-idea{
-//        .main-idea__txt{
-//            padding-left: 115px;
-//        }
-//    }
+@media screen and (max-width: 1900px){
+    .error__inner-center .error-circle{
+        top: 19%;
+        left: 58.5%;
+    }
+}
+@media screen and (max-width: 1660px){
+    .error__inner-center .error-circle{
+        top: 18%;
+        left: 60%;
+    }
 }
 @media screen and (max-width: 1600px){
     .conditions{
@@ -128,6 +133,11 @@
             padding-top: 60px;
         }
     }
+    // ERROR page
+    .error__inner-center .error-circle{
+        top: 17%;
+        left: 62%;
+    }
 }
 @media screen and (max-width: 1366px){
     .cursor{
@@ -147,6 +157,16 @@
         &__inner {
             padding-top: 85px;
         }
+    }
+    .error__inner-center .error-circle{
+        top: 18.5%;
+        left: 63%;
+    }
+}
+@media screen and (max-width: 1100px){
+    .error__inner-center .error-circle{
+        top: 18.5%;
+        left: 64%;
     }
 }
 @media screen and (max-width: 1025px){
@@ -173,6 +193,10 @@
         width: 16px;
         height: 16px;
         font-size: 50px;
+    }
+    .error__inner-center .error-circle{
+        top: 18.5%;
+        left: 65%;
     }
 }
 @media screen and (max-width: 960px){
@@ -222,13 +246,25 @@
     .footer__box .faq-accordion {
         max-width: 40%;
     }
+    .error__inner-center .error-circle{
+        top: 18.5%;
+        left: 66%;
+    }
 }
 @media screen and (max-width: 900px){
     .accordion-content{
         padding: 2px 47px 0px 20px;
     }
+    .error__inner-center .error-circle{
+        top: 18.5%;
+        left: 67%;
+    }
 }
 @media screen and (max-width: 840px){
+    .error__inner-center .error-circle{
+        top: 18.5%;
+        left: 68%;
+    }
     .footer__content {
         justify-content: end;
     }
@@ -266,6 +302,10 @@
         .slider-control{
             left: 30%;
         }
+    }
+    .error__inner-center .error-circle{
+        top: 18.5%;
+        left: 69%;
     }
 }
 @media screen and (max-width: 768px){
@@ -350,6 +390,14 @@
     }
     .order{
         padding: 0 1em;
+    }
+    .error__inner .error-title {
+        margin-bottom: 60px;
+        font-size: 23px;
+    }
+    .error__inner-center .error-circle{
+        top: 24.5%;
+        left: 71%;
     }
 }
 @media screen and (max-width: 720px){
@@ -455,6 +503,9 @@
             margin-bottom: 2em;
         }
     }
+    .error__inner-center .error-circle{
+        left: 72%;
+    }
 }
 @media screen and (max-width: 650px){
     .conditions__inner {
@@ -467,6 +518,9 @@
             margin-right: 0;
             margin-bottom: 50px;
         }
+    }
+    .error__inner-center .error-circle{
+        left: 73%;
     }
 }
 
@@ -495,6 +549,9 @@
         max-width: 355px;
         width: 100%;
         display: inline-block;
+    }
+    .error__inner-center .error-circle{
+        left: 74%;
     }
 }
 
@@ -574,7 +631,12 @@
         //         }
         //     }
         // }
-    
+    .error__inner-center .error-number {
+        font-size: 140px;
+    }
+    .error__inner-center .error-circle{
+        left: 75%;
+    }
 }
 @media screen and (max-width: 530px){
     .insta__pics{
@@ -597,7 +659,9 @@
             max-width: 70%;
         }
     }
-   
+    .error__inner-center .error-circle{
+        left: 76%;
+    }
 }
 @media screen and (max-width: 490px){
     h1{
@@ -643,6 +707,9 @@
     }
     .team__item .team__photo-last:after {
         font-size: 38px;
+    }
+    .error__inner-center .error-circle{
+        left: 77%;
     }
 }
 @media screen and (max-width: 460px){
@@ -704,6 +771,12 @@
         bottom: 71px;
         right: 25px;
     }
+    .error__inner-center .error-number {
+        font-size: 130px;
+    }
+    .error__inner-center .error-circle{
+        left: 78%;
+    }
 }
 @media screen and (max-width: 430px){
     .nav-menu{
@@ -762,7 +835,17 @@
     .about {
         margin-bottom: 0;
     }
-    
+    .error{
+        padding: 0px 0 50px;
+    }
+    .error__inner-center .error-circle{
+        top: 23%;
+        left: 79%;
+        font-weight: 400;
+    }
+    .error__inner-center .error-number {
+        font-size: 110px;
+    }
 }
 @media screen and (max-width: 400px){
     .store-pics {
@@ -814,6 +897,10 @@
     .contacts .flex-block__item .customer-care {
         margin-bottom: 20px;
     }
+    .error__inner-center .error-circle{
+        top: 23%;
+        left: 80%;
+    }
 }
 @media screen and (max-width: 360px){
     
@@ -844,5 +931,8 @@
     }
     .viber__btn {
         bottom: 57px;
+    }
+    .error__inner-center .error-circle{
+        left: 81%;
     }
 }

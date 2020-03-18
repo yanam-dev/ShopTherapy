@@ -1112,7 +1112,61 @@ button.accordion.is-open:after {
     }
 }
 
-// end team page
+// end TEAM page
+// start ERROR page
+.error{
+    padding: 10px 0 60px;
+    position: relative;
+    background-color: #FDF8F5;
+    border-top: 0.5px solid rgba(158,127,71,0.6);
+    border-bottom: 0.5px solid rgba(158,127,71,0.6);
+    &__inner{
+        .error-title{
+            text-transform: lowercase;
+            font-size: 25px;
+            font-weight: 400;
+            span{
+                font-style: italic;
+            }
+        }
+        &-center{
+            text-align: center;
+            .error-number{
+                font-size: 160px;
+                display: block;
+            }
+            .error-circle{
+                animation: text-animation 15s infinite linear;
+                position: absolute;
+                top: 20%;
+                left: 57.5%;
+                font-size: 12px;
+                font-weight: 700;
+            }
+            span > a{
+                transition: all .1s ease;
+                position: relative;
+                display: inline-block;
+                font-weight: 300;
+                line-height: 1.3;
+                @extend %underline-anim;
+                &:before{
+                    background-color:  rgba(165, 51, 133, 0.822);
+                    height: 1px;
+                    width: 0;
+                }
+                &:hover:before{
+                    width: 100%;
+                }
+            }
+            // a:hover{
+            //     color: rgba(108,99,255,0.7);
+            // }
+        }
+    }
+}
+
+// end ERROR page
 
 @import 'media';
 

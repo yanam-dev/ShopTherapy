@@ -224,7 +224,15 @@ h6{
         transform: translateX(0px);
     }
 }
-
+// circle animation Error page
+@keyframes text-animation{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 // breadcrumbs start
 .breadcrumbs{
     text-align: left;

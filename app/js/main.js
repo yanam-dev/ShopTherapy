@@ -112,6 +112,10 @@ for (var i = 0; i < accordions.length; i++) {
     }
     }
 }
+
+// CIRCLE ERROR PAGE
+new CircleType(document.getElementById('error-circle'));  
+ 
 // CURSOR
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".main");
@@ -165,6 +169,5 @@ navLinks.forEach(link => {
         //     $("#loadMore").text("No Content").addClass("noContent");
         //   }
         // });
-        
-     
+    
 });
