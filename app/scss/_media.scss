@@ -223,6 +223,11 @@
         max-width: 40%;
     }
 }
+@media screen and (max-width: 900px){
+    .accordion-content{
+        padding: 2px 47px 0px 20px;
+    }
+}
 @media screen and (max-width: 840px){
     .footer__content {
         justify-content: end;
@@ -486,7 +491,11 @@
             width: 45%;
         }
     }
-    
+    .faq-accordion .accordion > span {
+        max-width: 355px;
+        width: 100%;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -552,8 +561,11 @@
         // .slick-slide.slick-center {
         //     transform: scale(2.4);
         //     transition: transform .8s 1.4s cubic-bezier(.84, 0, .08, .99);
-        }
-        
+    }
+    button.accordion{
+        font-size: 15px;
+        padding: 16px 0;
+    } 
         
         // .image-slider{
         //     .slick-slide{
@@ -665,6 +677,10 @@
     }
     .contacts .contact__form-title {
         font-size: 25px;
+    }
+    .faq-accordion .accordion span {
+        max-width: 250px;
+        display: inline-block;
     }
     .footer__content {
         flex-direction: column;
