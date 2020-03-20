@@ -1,4 +1,10 @@
 $(function(){
+    // PRELOADER start
+    var $preloader = $('#spinner'),
+    $spinner = $preloader.find('.spinner-load');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+    // PRELOADER end
     $('.promo-slider').slick({
         infinite: true,
         fade: true,
@@ -49,7 +55,6 @@ $(function(){
     $('.image-slider--small').slick(sickThirdly);
 
 
-    
 // WORKS slider end
 
         // menu button start
@@ -115,6 +120,7 @@ for (var i = 0; i < accordions.length; i++) {
 
 // CIRCLE ERROR PAGE
 new CircleType(document.getElementById('error-circle'));  
+new CircleType(document.getElementById('page-preloader'));  
  
 // CURSOR
 let mouseCursor = document.querySelector(".cursor");
@@ -160,8 +166,9 @@ navLinks.forEach(link => {
     //  })(jQuery);  
     // MIXING STORES
     var mixer = mixitup('.store-grid');
-    
-  // $(".store-brick").slice(0, 25).show();
+
+
+// $(".store-brick").slice(0, 25).show();
         // $("#loadMore").on("click", function(e){
         //   e.preventDefault();
         //   $(".store-brick:hidden").slice(0, 25).slideDown();
