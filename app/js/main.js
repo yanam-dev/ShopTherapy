@@ -90,13 +90,10 @@ $(function(){
     }
     navSLide(); 
 // menu button end
+// MIXING STORES
+var mixer = mixitup('.store-grid');
 
-// Smooth scrolling
-$("nav li a").click(function () {
-    elementClick = $(this).attr("href");
-    destination = $(elementClick).offset().top;
-    $("body,html").animate({scrollTop: destination }, 1000);
-});
+
 
 //Accordion
 var accordions =
@@ -117,13 +114,9 @@ for (var i = 0; i < accordions.length; i++) {
     }
 }
 
-// CIRCLE ERROR PAGE
-new CircleType(document.getElementById('error-circle'));  
-new CircleType(document.getElementById('page-preloader'));  
 
-// MIXING STORES
-   var mixer = mixitup('.store-grid');
-   
+
+
 // CURSOR
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".main");
@@ -145,37 +138,13 @@ navLinks.forEach(link => {
         link.classList.add("hovered-link");
     });
     });
-
-  
-    // (function ($) {
-    //     var token = "3561792490.1677ed0.8167784b79634ea08757ecc269d6056c";  
-    //     var num_photos = 4;
-    //      $.ajax({
-    //          url: "https://api.instagram.com/v1/users/self/media/recent",
-    //          dataType: "jsonp",
-    //          type: 'GET',
-    //          data: {access_token: token, count: num_photos},
-    //          success: function(data){
-    //              console.log(data ,"insta");
-    //              for( x in data.data ){
-    //              $('.instagallery').append('<div class="o-flex__item o-flex__col-lg-3 o-flex__col-sm-6" style="padding:0;"><a rel="gallery1" target="_blank" href="'+data.data[x].link+'" title=""> <img class="c-insta-img" src="'+data.data[x].images.low_resolution.url+'"></a></div>');  
-    //              }
-    //          },
-    //          error: function(data){
-    //              console.log(data);
-    //          }
-    //      });
-    //  })(jQuery);  
-  
-
-
-// $(".store-brick").slice(0, 25).show();
-        // $("#loadMore").on("click", function(e){
-        //   e.preventDefault();
-        //   $(".store-brick:hidden").slice(0, 25).slideDown();
-        //   if($(".store-brick:hidden").length == 0) {
-        //     $("#loadMore").text("No Content").addClass("noContent");
-        //   }
-        // });
     
+    // Smooth scrolling
+    $("nav li a").click(function () {
+        elementClick = $(this).attr("href");
+        destination = $(elementClick).offset().top;
+        $("body,html").animate({scrollTop: destination }, 1000);
+    });
+// CIRCLE ERROR PAGE
+    new CircleType(document.getElementById('error-circle')); 
 });
