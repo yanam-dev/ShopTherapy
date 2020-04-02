@@ -1,10 +1,11 @@
 $(function(){
-    // PRELOADER start
+// PRELOADER start
     var $preloader = $('#spinner'),
     $spinner = $preloader.find('.spinner-load');
     $spinner.fadeOut();
     $preloader.delay(350).fadeOut('slow');
-    // PRELOADER end
+ // PRELOADER end
+//  SLIDER HEADER start
     $('.promo-slider').slick({
         infinite: true,
         fade: true,
@@ -12,7 +13,8 @@ $(function(){
         speed: 800,
         slidesToShow: 1
     });
-// WORKS slider start
+//  SLIDER HEADER end
+//  SLIDER MAIN PAGE start
     var sickPrimary = {
         autoplay: true,
         autoplaySpeed: 2400,
@@ -53,43 +55,41 @@ $(function(){
     $('.image-slider').slick(sickPrimary);
     $('.text-slider').slick(sickSecondary);
     $('.image-slider--small').slick(sickThirdly);
+//  SLIDER MAIN PAGE end
 
-
-// WORKS slider end
-
-        // menu button start
-        const navSLide = () => {
-            const menu__btn = document.querySelector('.menu__btn');
-            const nav = document.querySelector('.nav-menu');
-            const navLinks = document.querySelectorAll('.nav-menu li');
-            const navList = document.querySelectorAll('.nav-menu__one, .nav-menu__two, .nav-menu__three');
-        
-            menu__btn.addEventListener('click', () => {
-                // Toggle Nav
-                nav.classList.toggle('menu-active')
-        
-                // Animate Links
-                navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = '';
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-                    }
-                });
-                 // Animate List
-                 navList.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = '';
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-                    }
-                });
-                // Burger Animation
-                menu__btn.classList.toggle('toggle');
+// menu button start
+    const navSLide = () => {
+        const menu__btn = document.querySelector('.menu__btn');
+        const nav = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-menu li');
+        const navList = document.querySelectorAll('.nav-menu__one, .nav-menu__two, .nav-menu__three');
+    
+        menu__btn.addEventListener('click', () => {
+            // Toggle Nav
+            nav.classList.toggle('menu-active')
+    
+            // Animate Links
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                }
             });
-        }
-        navSLide(); 
-        // menu button end
+                // Animate List
+                navList.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                }
+            });
+            // Burger Animation
+            menu__btn.classList.toggle('toggle');
+        });
+    }
+    navSLide(); 
+// menu button end
 
 // Smooth scrolling
 $("nav li a").click(function () {
@@ -99,7 +99,6 @@ $("nav li a").click(function () {
 });
 
 //Accordion
-
 var accordions =
 document.getElementsByClassName('accordion');
 
@@ -121,7 +120,10 @@ for (var i = 0; i < accordions.length; i++) {
 // CIRCLE ERROR PAGE
 new CircleType(document.getElementById('error-circle'));  
 new CircleType(document.getElementById('page-preloader'));  
- 
+
+// MIXING STORES
+   var mixer = mixitup('.store-grid');
+   
 // CURSOR
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".main");
@@ -164,8 +166,7 @@ navLinks.forEach(link => {
     //          }
     //      });
     //  })(jQuery);  
-    // MIXING STORES
-    var mixer = mixitup('.store-grid');
+  
 
 
 // $(".store-brick").slice(0, 25).show();
