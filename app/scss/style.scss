@@ -1143,6 +1143,9 @@ button.accordion.is-open:after {
                 left: 57.5%;
                 font-size: 12px;
                 font-weight: 700;
+                transform: translate(-50%, -50%);
+                transition: all .5s ease-out;
+                // -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
             }
             span > a{
                 transition: all .1s ease;

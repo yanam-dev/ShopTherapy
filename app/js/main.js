@@ -146,5 +146,5 @@ navLinks.forEach(link => {
         $("body,html").animate({scrollTop: destination }, 1000);
     });
 // CIRCLE ERROR PAGE
-    new CircleType(document.getElementById('error-circle')); 
+    // new CircleType(document.getElementById('error-circle')); 
 });

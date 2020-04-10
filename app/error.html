@@ -106,7 +106,9 @@
                             </div>
                             <div class="error__inner-center">
                                 <div class="error-number">404</div>
-                                <div class="error-circle" id="error-circle">помилка.помилка.помилка.помилка.</div> 
+                                <div class="error-circle" id="error-circle">
+                                    <span id="rotated">помилка.помилка.помилка.помилка.</span>
+                                </div> 
                                 <span><a href="index.html"> назад до головної</a></span> 
                             </div>
                         </div>
@@ -167,10 +169,28 @@
 
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+   
+    <script>
+                // CIRCLE ERROR PAGE
+                // const circleType = new CircleType(
+                //     document.getElementById("rotated")
+                //     ).radius(100);
+                //     $(window).scroll(function() {
+                //         var offset = $(window).scrollTop();
+                //         offset = offset * 0.4;
+            
+                //         $(".error-circle").css({
+                //             "-moz-transform" : "rotate(" + offset + "deg)",
+                //             "-webkit-transform" : "rotate(" + offset + "deg)",
+                //             "-o-transform" : "rotate(" + offset + "deg)",
+                //             "-ms-transform" : "rotate(" + offset + "deg)",
+                //             transform: "rotate(" + offset + "deg)"
+                //         });
+                //     }); 
+        new CircleType(document.getElementById('error-circle')); 
+    </script>
 </html>
