@@ -637,6 +637,11 @@
     .error__inner-center .error-circle{
         left: 75%;
     }
+    .footer__credits{
+        a{
+            display: block;
+        }
+    }
 }
 @media screen and (max-width: 530px){
     .insta__pics{
